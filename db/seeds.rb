@@ -7,23 +7,13 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
-ActiveRecord::Base.connection.execute "INSERT INTO categories (name) VALUES ('Arte'),
- ('Artes plásticas'),
- ('Circo'),
- ('Comunidade'),
- ('Feito à mão'),
- ('Humor'),
- ('Quadrinhos'),
- ('Dança'),
- ('Design'),
- ('Eventos'),
- ('Moda'),
- ('Comida'),
- ('Cinema & Vídeo'),
- ('Jogos'),
- ('Jornalismo'),
- ('Música'),
- ('Fotografia'),
- ('Tecnologia'),
- ('Teatro'),
- ('Literatura');"
+ActiveRecord::Base.connection.execute "INSERT INTO categories (name) VALUES ('Stockolm'),
+ ('Goteborg'),
+ ('Malmö'),
+ ('Uppsala'),
+ ('Orebro'),
+ ('Vasteras'),
+ ('Linköping'),
+ ('Helsinborg'),
+ ('Jonkoping'),
+ ('Norrköping');"
