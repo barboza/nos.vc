@@ -14,7 +14,7 @@ Catarse::Application.routes.draw do
 
   mount CatarseMoip::Engine => "/", :as => "catarse_moip"
 
-  filter :locale
+  filter :locale, :exclude => /^\/admin/
 
   root to: 'projects#index'
 
